@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
+    color: #fff;
+  }
+
+  h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #fbf8f8;
+  }
+
+  .navbar {
+    background-color: #ffffff;
+    border-bottom: 3px solid #FFD700;
+  }
+
+  .navbar .nav-link {
+    color: #fffdfd !important;
+    font-weight: 600;
+  }
+
+  .navbar .nav-link:hover {
+    color: #FFD700 !important;
+    text-shadow: 0 0 10px #FFD700;
+  }
+
+  .navbar .navbar-brand {
+    color: #FFD700 !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+  }
+
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #1A1A1D, #5A5A5D);
+    text-align: center;
+    padding: 80px 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  header h1 {
+    font-size: 3rem;
+    color: #FFD700;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+  }
+
+  header .lead {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  /* Button Styling */
+  #generateButton {
+    margin-left: 5px;
+    background-color: #FFD700;
+    border: none;
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #111;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+  }
+
+  #generateButton:hover {
+    background-color: #ffcc00;
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.7);
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+  }
+
+  /* Input Field */
+  #prompt {
+    border-radius: 30px;
+    font-size: 1.1rem;
+    padding: 15px;
+    background-color: aliceblue;
+    color: #222;
+    border: 2px solid #FFD700;
+    transition: 0.3s;
+  }
+
+  #prompt:focus {
+    align-items: center;
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  }
+
+  /* Image Card */
+  .card {
+    background-color: #222;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    padding: 2%;
+    margin-top: 30px;
+    transition: 0.3s;
+    
+    
+  }
+
+  img{
+    width: 62%;
+    height: 62%;
+  }
+
+  .card-body {
+    text-align: center;
+  }
+
+  /* Spinner Styling */
+  .spinner-border {
+    margin-top: 20px;
+  }
+
+  form p{
+    text-align: center;
+    margin-inline: 20%;
+    font-size: 0.8rem;
+    margin-bottom: 11%;
+  }
+
+  /* Footer */
+  footer p{
+    margin: 0;
+    background-color: #222;
+    color: #ddd;
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .outer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .outer button {
+    
+    padding: 8px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: #FFD700;
+    color: #111;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .outer button:hover {
+    background-color: #ff4f39;
+    box-shadow: 0 4px 15px rgba(255, 105, 105, 0.4);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 767.5px) {
+    body{
+      background-color: rgb(26, 27, 26);
+    }
+  
+    header h1 {
+      font-size: 2rem; /* Smaller font size for mobile */
+    }
+  
+    header .lead {
+      font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+  
+    #prompt {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 1px; /* Add space between input and button on mobile */
+    }
+  
+    #generateButton {
+      margin-left: 0; /* Remove left margin on mobile */
+    }
+  }
+  
