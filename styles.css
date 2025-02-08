@@ -11,7 +11,7 @@ body {
   }
 
   .navbar {
-    background-color: #ffffff;
+    background-color: rgb(33, 37, 41);
     border-bottom: 3px solid #FFD700;
   }
 
@@ -31,6 +31,19 @@ body {
     font-size: 2rem;
   }
 
+  /* mode sweitcher*/
+  .mode{
+    
+    background-color: #ff6f61;
+    border: white;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    border-radius: 15px;
+    transition: 0.3s ease;  
+}
   /* Header */
   header {
     background: linear-gradient(135deg, #1A1A1D, #5A5A5D);
@@ -118,7 +131,7 @@ body {
 
   form p{
     text-align: center;
-    margin-inline: 20%;
+    margin-inline: 10%;
     font-size: 0.8rem;
     margin-bottom: 11%;
   }
