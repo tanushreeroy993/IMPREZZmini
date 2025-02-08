@@ -40,3 +40,20 @@ document.getElementById("promptform").addEventListener("submit", async function(
       alert("Failed to generate the design. Please try again.");
     }
   });
+
+
+function switchStyle() {
+
+    const styleSheet = document.getElementById("styleSheet");
+  
+    if (styleSheet.href.includes("styles.css")) {
+  
+      styleSheet.href = "styles2.css"; // Switch to style2.css
+  
+    } else {
+  
+      styleSheet.href = "styles.css"; // Switch back to style1.css
+  
+    }
+  
+  }
