@@ -66,16 +66,18 @@ body {
   /* Button Styling */
   #generateButton {
     margin-left: 5px;
-    background-color: #FFD700;
+    
     border: none;
     padding: 5px 20px;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #111;
+    
     text-transform: uppercase;
     border-radius: 30px;
     transition: 0.3s ease;
     box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+    background-color: #ffcc00; /* Brighter yellow */
+    color: #000; /* Black for better readability */
   }
 
   #generateButton:hover {
@@ -114,11 +116,24 @@ body {
     
     
   }
-
-  img{
-    width: 62%;
-    height: 62%;
-  }
+/* added by me  hehehehe */
+  #generatedImage {
+    
+    background-color: #222;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+#generatedImageImg {
+  width: 80%;  /* Adjust width for better fit */
+  max-width: 500px;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center the image */
+  border-radius: 10px;
+}
 
   .card-body {
     text-align: center;
@@ -171,11 +186,12 @@ body {
     background-color: #ff4f39;
     box-shadow: 0 4px 15px rgba(255, 105, 105, 0.4);
   }
+
   
   /* Responsive Adjustments */
   @media (max-width: 767.5px) {
     body{
-      background-color: rgb(26, 27, 26);
+      background-color: rgb(06, 27, 26);
     }
   
     header h1 {
