@@ -18,6 +18,8 @@ document.getElementById("promptform").addEventListener("submit", async function(
 
   try {
       // Create a new image and wait for it to load
+
+      // addding a weatermarker rem
       img.src = imageUrl;
       img.onload = function () {
           spinner.classList.add("d-none");
@@ -31,7 +33,7 @@ document.getElementById("promptform").addEventListener("submit", async function(
       };
 
       // Enable download button
-      downloadButton.onclick = () => {
+     downloadButton.onclick = () => {
           const link = document.createElement("a");
           link.href = imageUrl;
           link.download = "generated-design.png";
@@ -39,6 +41,8 @@ document.getElementById("promptform").addEventListener("submit", async function(
           link.click();
           document.body.removeChild(link);
       };
+
+     
       
   } catch (error) {
       console.error("Error loading image:", error);
@@ -46,3 +50,32 @@ document.getElementById("promptform").addEventListener("submit", async function(
       alert("Failed to generate the design. Please try again.");
   }
 });
+
+  
+
+
+
+
+
+
+
+  function switchStyle() {
+    const styleSheet = document.getElementById("styleSheet");
+
+    if (styleSheet.href.includes("styles.css")) {
+        styleSheet.href = "styles2.css";
+        localStorage.setItem("theme", "styles2.css"); // Store in localStorage
+    } else {
+        styleSheet.href = "styles.css";
+        localStorage.setItem("theme", "styles.css"); // Store in localStorage
+    }
+}
+
+// Load stored theme on page load
+window.onload = function () {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+        document.getElementById("styleSheet").href = savedTheme;
+    }
+};
+
