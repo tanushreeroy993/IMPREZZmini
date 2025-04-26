@@ -379,6 +379,7 @@ form p {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .outer button {
@@ -542,7 +543,14 @@ header .lead {
   border-color: #c3e6cb;
   border-radius: 12px;
   padding: 1rem;
-  margin-top: 1rem;
   animation: fadeIn 0.5s ease-out forwards;
   box-shadow: 0 0 15px rgba(0, 206, 201, 0.2);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  width: 80%;
+  text-align: center;
+  z-index: 10;
 }

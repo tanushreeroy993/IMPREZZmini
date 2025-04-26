@@ -49,16 +49,8 @@ document.getElementById("promptform").addEventListener("submit", async function(
           a.click();
           document.body.removeChild(a);
           
-          // Show success message
-          const successMsg = document.createElement("div");
-          successMsg.className = "alert alert-success mt-2";
-          successMsg.textContent = "Image downloaded successfully!";
-          document.getElementById("outer").appendChild(successMsg);
-          
-          // Remove success message after 3 seconds
-          setTimeout(() => {
-            successMsg.remove();
-          }, 3000);
+          // Show success message as alert
+          alert("Image downloaded successfully!");
         } catch (error) {
           console.error("Download error:", error);
           alert("Failed to download the image. Please try again.");

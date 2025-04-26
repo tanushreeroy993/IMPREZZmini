@@ -315,6 +315,7 @@ form p {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .outer button {
@@ -491,6 +492,14 @@ header .lead {
 
 /* Success Message Styling */
 .alert-success {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  width: 80%;
+  text-align: center;
+  z-index: 10;
   background-color: rgba(26, 26, 46, 0.8);
   color: #00f7ff;
   border-color: #00f7ff;
